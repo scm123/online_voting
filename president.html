@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>::::vote for president:::</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .b1{
+                position: absolute;
+                top:220px;
+                left:650px;
+                width:150px;
+                    
+               }
+               .m1{
+                 position: absolute;
+                top:200px;
+                left:400px;
+                width:250px                  
+               }
+            
+            .b2{
+                 position: absolute;
+                top:270px;
+                 left:650px;
+                width:150px               
+               }
+               .m2{
+                 position: absolute;
+                top:250px;
+                left:400px;
+                width:250px                  
+               }
+            
+            .b3{
+                 position: absolute;
+                top:320px;
+                left:650px;
+                width:150px               
+               }
+               .m3{
+                 position: absolute;
+                top:300px;
+                left:400px;
+                width:250px                  
+               }
+               h2{
+                position: absolute;
+                top:90px; 
+                left:410px;
+                width:350px       
+               }
+               body{
+                   background-color:antiquewhite ;
+                   color: #303366;
+              }
+              input[type='button']
+              {
+                  color: #303366;
+              }
+              
+                  .hm{
+                    font-size: 15px;
+                color: darkblue;
+                position: absolute;
+                left:15px;
+                top:60px;
+            }
+                        a{     position: absolute;
+                left:915px;
+                top:60px}
+        </style>
+      
+    </head>
+    
+    <body>
+         <image src="hom.jpg" onclick="location.href='voter.jsp'  "><span class="hm">Go to Home page</span>
+          <a href="vote.html">Go Back</a>
+        <form name="form1" action="president.jsp" method="post">
+        <h2>::Vote For President Candidates !</h2>
+        <input type="hidden" name="btnName">
+        <input type="button" class='b1' value="Candidate1"  onclick="button1();"/><h4 class='m1'>Vote For Candidate1</h4>  
+        <input type="button" class='b2' value="Candidate2" onclick="button2();"/><h4 class='m2'>Vote For Candidate2</h4>
+        <input type="button" class='b3' value="Candidate3" onclick="button3();"/><h4 class="m3">Vote For Candidate3</h4>
+        </form>
+        <script>
+            function button1()
+            {
+                document.form1.btnName.value="candidate1";
+                form1.submit();
+            }
+            function button2()
+            {
+                document.form1.btnName.value="candidate2";
+                form1.submit();
+            }
+            function button3()
+            {
+                document.form1.btnName.value="candidate3";
+                form1.submit();
+            }
+        </script>
+    </body>
+</html>

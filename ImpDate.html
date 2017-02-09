@@ -1,0 +1,147 @@
+
+<html>
+    <head>
+        <title>:::important Dates::</title>
+        <style>
+            .hm{
+                font-size: 15px;
+                color: darkblue;
+                position: absolute;
+                left:15px;
+                top:60px;
+            }
+            .ha{
+                position: absolute;
+                left:450px;
+                top:50px;
+                color:darkblue;
+            }
+            p{
+                position: absolute;
+                left:650px;
+                top:250px;
+                font-size: 35px;
+                color:red; 
+            }
+            
+            .hb{
+                position: absolute;
+                left:450px;
+                top:350px;
+                color:darkblue;
+            }
+            .e{
+                color:#303366;
+                position: absolute;
+                width: 350px;
+                top: 150px;
+                left: 600px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 15px;                
+            }
+              input[type="date"]{
+                color:#303366;
+                position: absolute;
+                width: 350px;
+                top: 200px;
+                left: 600px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 15px;                
+            }
+              input[type="submit"]{
+                color:#303366;
+                position: absolute;
+                width: 250px;
+                top: 520px;
+                left: 700px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 15px;                
+            }
+              input[type="reset"]{
+                color:#303366;
+                position: absolute;
+                width: 250px;
+                top: 520px;
+                left: 400px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 15px;                
+            }
+            .a{
+                   color:darkblue;
+                position: absolute;
+                width: 350px;
+                top: 150px;
+                left: 400px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 22px;
+            }
+            .aa{
+                   color:darkblue;
+                position: absolute;
+                width: 350px;
+                top: 450px;
+                left: 400px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 22px;
+            }
+            .b{
+                  color:darkblue; 
+                position: absolute;
+                width: 350px;
+                top: 200px;
+                left:400px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 22px;  
+            }
+            .d{
+                color:#303366;
+                position: absolute;
+                width: 350px;
+                top: 450px;
+                left: 600px;
+                border-radius: 5px;
+                height: 30px;
+                font-size: 15px;                
+            }
+            body{background-color: antiquewhite;}
+        </style>
+        
+
+    </head>
+    <body >
+        <image src="hom.jpg" onclick="location.href='admin.jsp'  "><span class="hm">Go to Home page</span>
+        <form method="post" action="ImpDate.jsp">
+        <h1 class="ha">Update Election Dates Here !</h1>
+        <div>
+            <span class="a">Enter Election Name :</span> 
+            <select class="e" name='postE' >
+                  <option value="president">--select--</option>
+                <option value="president">President</option>
+                 <option value="vice president">Vice President</option>
+                   <option value="secretary">Secretary</option>   
+            </select>
+            
+            <span class="b">Enter Date :</span><input type="date" name='dat' placeholder="DD-MM-YYYY" />
+        </div>
+        <p>OR</p>
+         <h1 class=hb >Delete Election Dates Here !</h1>
+         <span class="aa">Enter Election Name :</span>             
+           <select class="d" name='postD' >
+                  <option value="president">--select--</option>
+                <option value="president">President</option>
+                 <option value="vice president">Vice President</option>
+                   <option value="secretary">Secretary</option>   
+            </select>
+                 
+            <input type="submit" >
+            <input type='reset'>
+            </form>
+    </body>
+</html>

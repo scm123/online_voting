@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <style>
+           h2{
+                position:absolute;
+                left:540px;
+                top:50px;
+                color:darkblue;
+            } 
+            .bs1{
+                position:absolute;
+                left:550px;
+                top:150px;
+                color:darkblue;
+            }
+            .bs2{
+                position:absolute;
+                left:550px;
+                top:200px;
+                color:darkblue;
+            }
+            .bs3{
+                position:absolute;
+                left:550px;
+                top:250px;
+                color:darkblue;
+            }
+            .bs4{
+                position:absolute;
+                left:550px;
+                top:300px;
+                color:darkblue;
+            }
+            
+               .bs5{
+                position:absolute;
+                left:550px;
+                top:350px;
+                color:darkblue;
+            }
+            
+                 .bs6{
+                position:absolute;
+                left:550px;
+                top:400px;
+                color:darkblue;
+             }
+             
+                 .bs7{
+                position:absolute;
+                left:650px;
+                top:400px;
+                color:darkblue;
+            }
+            
+               .bs8{
+                position:absolute;
+                left:750px;
+                top:400px;
+                color:darkblue;
+            }
+            
+                 .bs10{
+                position:absolute;
+                left:550px;
+                top:450px;
+                color:darkblue;
+            }
+            
+                .bs9{
+                position:absolute;
+                left:730px;
+                top:450px;
+                color:darkblue;
+            }
+            
+            body{
+                background-color: lightgoldenrodyellow ;
+                color:#292231;
+            }
+                         input[type="submit"]{color:darkblue;}
+             input[type="reset"]{color:darkblue;}
+             input[type="text"]{color:darkblue;}
+             input[type="password"]{color:darkblue;}
+        </style>
+        <script></script>
+    </head>  
+    <body >
+        <form action="make_request.jsp" method="post" >
+<div class='t2'>
+          <h2 >New Voter Register Here ! </h2>
+    
+      
+     
+          <div class='bs1'>   Voter Name :
+              <input type='text' placeholder='Enter Your Name'  name='vnam' required/>
+          </div >
+         
+          <div class="bs2">
+              Voter father Name :
+              <input type='text' placeholder='Enter Father Name' name='fnam' required/>
+          </div>
+          <div class="bs3">
+              Voter Age :
+              <input type='number' min="18" placeholder='Enter Your Age' name='age' required/>
+          </div>
+          <div class="bs4">
+              Voter City :
+              <input type='text' placeholder='Enter City Name' name='city' required/>
+          </div>
+          
+          <div class="bs5">
+              Voter Street :
+              <input type='text' placeholder='Enter Street Name' name='street' required/>
+          </div>
+          
+           <div class="bs6">
+              Male :
+              <input type='radio'  name="grp" value='male' required/>
+          </div>
+          <div class="bs7">
+              Female :
+              <input type='radio'   name="grp" value='female' required/>
+          </div>
+         <div class="bs8">
+              other :
+              <input type='radio'  name="grp"  value='other' required/>
+          </div>
+          
+        
+          <div class='bs9'><input type='submit' value="SUBMIT" > Submit </div> 
+          
+          <div class='bs10' > <input type='reset' value="REFRESH"> Reset  </div>
+           
+</div>
+        </form>
+    </body>
+</html>
